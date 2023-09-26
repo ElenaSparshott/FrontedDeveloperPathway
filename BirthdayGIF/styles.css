@@ -1,0 +1,13 @@
+#avatar {
+    border: 5px solid #EFB0C9;
+    border-radius: 50%;
+    width: 150px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: #a2d2ff;
+    color:#ffffff;
+    text-shadow: 0px 0px 1px black;
+}
