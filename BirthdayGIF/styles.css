@@ -4,6 +4,12 @@
     width: 150px;
 }
 
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
@@ -11,3 +17,22 @@ body {
     color:#ffffff;
     text-shadow: 0px 0px 1px black;
 }
+
+#bd-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bd-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.gift {
+    width: 400px;
+}
+
