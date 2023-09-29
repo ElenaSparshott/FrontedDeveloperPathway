@@ -1,7 +1,37 @@
-#avatar {
-    border: 5px solid #EFB0C9;
-    border-radius: 50%;
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: #a2d2ff;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-shadow: 0 0 1px black;
+}
+
+#bff-img {
     width: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 #header {
@@ -10,41 +40,47 @@
     align-items: center;
 }
 
-body {
-    text-align: center;
-    font-family: 'Happy Monkey', cursive;
-    background: #a2d2ff;
-    color:#ffffff;
-    text-shadow: 0px 0px 1px black;
-}
-
-#bd-age {
-    background: #EFB0C9;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0 10px 0;
-}
-
-#bd-date {
-    margin: 0;
-    background: #EFB0C9;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.gift {
-    width: 400px;
-}
-
 .gift-section {
     margin-top: 50px;
 }
 
-.gift-hover {
-    margin-top: 10px;
-}
-
-.happy {
+.gift-title {
     margin-bottom: 10px;
 }
+
+.gift-hint {
+    margin-top: 0;
+}
+
+.gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift.jpg");
+    background-size: cover;
+}
+
+.gift-img:hover {
+    background-image: url("https://media.giphy.com/media/MVDPX3gaKFPuo/giphy.gif");
+}
+
+#react:hover {
+    background-image: url("images/b.jpg")
+}
+
+#love:hover {
+    background-image: url("https://media.giphy.com/media/iJP6mBmZyqKYTBmrav/giphy.gif")
+}
+
+#best:hover {
+    background-image: url("https://media.giphy.com/media/1L5YuA6wpKkNO/giphy.gif")
+}
+
+
+
+ 
+
+
 
