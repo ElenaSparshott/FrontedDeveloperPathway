@@ -86,7 +86,12 @@ p {
     background-image: url("https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif")
 }
 
-
+.footer {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
 
  
 
