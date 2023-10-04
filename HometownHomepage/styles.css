@@ -16,3 +16,9 @@ body {
 img {
     width: 100px;
 }
+
+#hero {
+    background-image: url("images/watermeadows.jpg");
+    background-size: cover;
+    height: 400px;
+}
