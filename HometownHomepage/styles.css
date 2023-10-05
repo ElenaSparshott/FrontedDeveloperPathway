@@ -9,16 +9,13 @@ DARK BLUE: #1D3557
 */
 
 body {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
     font-family: 'Happy Monkey', cursive;
     font-size: medium;
 }
 
 img {
-    width: 100px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 #hero {
@@ -32,23 +29,31 @@ img {
 }
 
 #activities {
-    background-color: #457B9D;
+    background-color: #309975;
     margin-top: 0;
     padding: 20px;
 }
 
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    color: #292322;
+}
+
 
 .card {
-        box-shadow: 10px 10px 5px 12px #cae9ff;
+        box-shadow: 10px 10px 5px 12px #309975;
         width: 400px;
         margin: 0px auto;
         padding: 20px;
         display: flex;
         justify-content: space-around;
         text-align: center;
-        background: #5fa8de;
-        color: #2b2839;
-        border-bottom: 6px solid #1b4965;
+        background: #454d66;
+        color: #F1FAEE;
+        border-bottom: 6px solid #58b368;
         border-radius: 20px;
 }
 
@@ -63,14 +68,14 @@ img {
 
 .guide {
     padding: 100px;
-    background-color: #F1FAEE;
+    background-color: #efeeb4;
 }
 
 #title {
     display: inline;
     border-radius: 5px;
     margin-top: 100px;
-    background-color: #1D3557;
+    background-color: #454d66;
     color: #F1FAEE;
     padding: 5px 10px;
 }
@@ -78,10 +83,21 @@ img {
 #heading {
     display: inline;
     margin: 0;
-    background: #1D3557;
+    background: #454d66;
     padding: 5px 10px;
     border-radius: 5px;
     color: #F1FAEE;
+}
+
+#topthree {
+    color: #292322;
+    text-align: center;
+    padding: 20px, 20px, 20px, 20px;
+}
+
+.activitycard {
+    width: 250px;
+    text-align: center;
 }
 
 
