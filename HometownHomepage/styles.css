@@ -9,8 +9,12 @@ DARK BLUE: #1D3557
 */
 
 body {
-    margin: 0;
+    margin: 0px auto;
     text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
@@ -21,4 +25,13 @@ img {
     background-image: url("images/watermeadows.jpg");
     background-size: cover;
     height: 400px;
+}
+
+#activities {
+    background-color: #457B9D;
+    margin-top: 0;
+}
+
+#guide {
+    background-color: #A8DADC;
 }
