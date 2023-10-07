@@ -1,3 +1,6 @@
+let num1 = 2
+let num2 = 4
+
 function add() {
     let add = num1 + num2
     console.log(add)
