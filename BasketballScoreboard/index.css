@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    color: #EEEEEE;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.scorecard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F94F6D;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    width: 200px;
+    height: 200px;
+    background: #080001;
+    border-radius: 25px;
+}
+
+button {
+    background-color: #1B244A;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-color: #9AABD8;
+    color: #9AABD8;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    /* align-items: ; */
+    justify-content: space-between;
+}
+
+
+
