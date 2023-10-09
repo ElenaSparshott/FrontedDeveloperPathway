@@ -10,31 +10,39 @@
 </head>
 
 <body>
+    <div>
+            <h1>Basketball Scoreboard</h1>
+        </div>
     <div class="container">
+        
         <div>
             <h3>HOME</h3>
         <div class="scorecard">
-            <p>0</p>
+            <span id="homeScore">0</span>
         </div>
         <div class="buttons">
-            <button>+1</button>
-            <button>+2</button>
-            <button>+3</button>
+            <button onclick="addHome(1)">+1</button>
+            <button onclick="addHome(2)">+2</button>
+            <button onclick="addHome(3)">+3</button>
         </div>
     </div>
 
     <div>
         <h3>GUEST</h3>
         <div class="scorecard">
-            <p>0</p>
+            <span id="guestScore">0</span>
         </div>
         <div class="buttons">
-            <button>+1</button>
-            <button>+2</button>
-            <button>+3</button>
+            <button onclick="addGuest(1)">+1</button>
+            <button onclick="addGuest(2)">+2</button>
+            <button onclick="addGuest(3)">+3</button>
         </div>
             
         </div>
+    </div>
+    <div class="countdown">Countdown</div>
+    <div class="time">
+        <button id="timer" onclick="timer()">Start</button>
     </div>
     <script src="index.js"></script>
 </body>
