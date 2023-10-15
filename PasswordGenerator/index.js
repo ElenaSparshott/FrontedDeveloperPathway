@@ -4,24 +4,28 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let passwordOneEl = document.getElementById("passwordOneBox")
 let passwordTwoEl = document.getElementById("passwordTwoBox")
 
+let password1;
+let password2;
+
+function password() {
+    let passwords ="";
+        for(let i = 0; i <= 15; i++) {
+        let randomInt = Math.floor(Math.random() * characters.length);
+        let character = characters[randomInt]
+        passwords += character;
+    }
+    return passwords 
+}
+
 function passwordGenerator() {
-    let password1 = "";
-    let password2 = "";
-    for(let i = 0; i <= 15; i++) {
-        let randomInt1 = Math.floor(Math.random() * characters.length);
-        let character1 = characters[randomInt1]
-        password1 += character1; 
-    }
+    let password1 = password();
+    let password2 = password();
+
     passwordOneEl.textContent = password1;
-
-
-     for(let i = 0; i <= 15; i++) {
-        let randomInt2 = Math.floor(Math.random() * characters.length);
-        let character2 = characters[randomInt2]
-        password2 += character2; 
-    }
     passwordTwoEl.textContent = password2;
 }
+
+
 
 
 
