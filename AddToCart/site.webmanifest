@@ -1,0 +1,11 @@
+{
+    "name": "Add to Cart",
+    "short_name": "Add to Cart",
+    "icons":
+        [
+            {"src":"/cat.png","sizes":"192x192","type":"image/jpg"}   
+        ],
+    "theme_color": "#EEF0F4",
+    "background_color": "#EEF0F4",
+    "display": "standalone"
+}
