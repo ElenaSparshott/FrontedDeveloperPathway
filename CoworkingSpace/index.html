@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -18,7 +19,19 @@
                     WeBarelyWork
                 </li>
                 <li class="icon">
-                    📍
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                </li>
+                <li class="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
                 </li>
             </ul>
         </nav>
@@ -30,8 +43,12 @@
 
         <section class="item">
             <img src="images/skylineoffice.jpg" class="item-img" alt="A smart coworking space">
+            <div class="img-banner">
+                Exclusive
+            </div>
             <div class="caption">
                 <p>Skiving in Scandinavia? Relax with a latte at Hygge Lounge.</p>
+                <button>Book</button>
             </div>
         </section>
 
@@ -39,6 +56,7 @@
             <img src="images/sofaoffice.jpg" class="item-img" alt="A coworking space with plants">
             <div class="caption">
                 <p>Bored in Barcelona? Take a siesta at the Sky Garden.</p>
+                <button>Book</button>
             </div>
         </section>
 
@@ -46,10 +64,20 @@
             <img src="images/yellowchair.jpg" class="item-img" alt="A comfortable coworking space">
             <div class="caption">
                 <p>Relaxing in Rio? Take some downtime at the Generator Hub.</p>
+                <button>Book</button>
             </div>
         </section>
 
     </main>
+    <div class="chatbox-bg">
+        <svg class="chatbox-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left"
+            viewBox="0 0 16 16">
+            <path
+                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+        </svg>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
+    color: #282828;
     margin: 0;
     padding: 0;
 }
@@ -8,9 +8,9 @@ body {
 ul {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background-color: #282828;
     list-style-type: none;
-    padding: 25px;
 }
 
 li {
@@ -18,10 +18,14 @@ li {
 }
 
 h1 {
-    size: 40px;
     font-weight: 400;
     margin: 25px 30px;
-    font-size: xx-large;
+    font-size: 90px;
+}
+
+img {
+    display: block;
+    width: auto;
 }
 
 .logo {
@@ -35,15 +39,67 @@ h1 {
 .icon {
     width: 25px;
     size: 18px;
+    color: whitesmoke;
 }
 
-img {
-    width: 400px;
+.burger {
+    color: whitesmoke;
+    margin-left: auto;
+    padding-right: 100px;
 }
 
 p {
     margin: 25px 0;
 }
+
+.img-banner {
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item {
+    position: relative;
+}
+
+button {
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 0;
+    align-self: center;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.chatbox-bg {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background-color: #dda15e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #999;
+    display: flex;
+}
+
+.chatbox-img {
+    width: 50%;
+    margin: auto;
+}
+
 
 
 
