@@ -10,13 +10,13 @@ function renderCountdown(){
     console.log(remainingDays)
     countdownDisplay.innerHTML = remainingDays
     
-    let hour = date.getHours()
-    let minutes = date.getMinutes()
-    let seconds = date.getSeconds()
+    let hour = (23 - date.getHours())
+    console.log(hour)
+    let minutes = (60 - date.getMinutes())
+    let seconds = (60 - date.getSeconds())
 
     let countDown = `It's ${remainingDays} days - ${hour} hrs - ${minutes} mins - ${seconds} secs to go!`
     countdown.innerText = countDown
-    console.log(countdown)
 }
  
 renderCountdown()
