@@ -7,9 +7,30 @@ tweetBtn.addEventListener('click', function(){
 })
 
 document.addEventListener('click', function(e){
-    console.log("like", e.target.dataset.like)
-    console.log("retweet", e.target.dataset.retweet)
+    if(e.target.dataset.like) {
+        handleLikeClick(e.target.dataset.like)
+    }  
 })
+
+function handleLikeClick(tweetId) {
+    const targetTweetObj = tweetsData.filter(function(tweet) {
+        return tweet.uuid === tweetId
+    })[0]
+
+    if(targetTweetObj.isLiked) {
+        targetTweetObj.likes--
+    }
+    else {
+        targetTweetObj.likes++
+    }
+    targetTweetObj.isLiked = !targetTweetObj.isLiked
+    render()
+}
+
+
+
+
+
 
 function getFeedHtml(){
     
