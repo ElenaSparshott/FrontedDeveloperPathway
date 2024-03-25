@@ -16,9 +16,6 @@ document.addEventListener('click', function(e){
     }
 })
 
-
-
-
 function handleLikeClick(tweetId) {
     const targetTweetObj = tweetsData.filter(function(tweet) {
         return tweet.uuid === tweetId
@@ -50,12 +47,43 @@ function handleRetweetClick(tweetId){
     render()
 }
 
-
 function getFeedHtml(){
-    
-    let feedHtml = ''
+    let feedHtml = ``
 
     tweetsData.forEach(function(tweet){
+
+        let likeIconClass = ''
+        
+        if (tweet.isLiked){
+            likeIconClass = 'liked'
+        }
+
+        let retweetIconClass = ''
+        
+        if (tweet.isRetweeted){
+            retweetIconClass = 'retweeted'
+        }
+
+        let repliesHtml = ''
+
+                if(tweet.replies.length > 0){
+            tweet.replies.forEach(function(reply){
+                repliesHtml+=`
+                <div class="tweet-reply">
+                <div class="tweet-inner">
+                <img src="${reply.profilePic}" class="profile-pic">
+                    <div>
+                        <p class="handle">${reply.handle}</p>
+                        <p class="tweet-text">${reply.tweetText}</p>
+                    </div>
+                </div>
+                </div>
+                `
+            })
+        }
+        
+
+
         feedHtml += `<div class="tweet">
             <div class="tweet-inner">
                 <img src="${tweet.profilePic}" class="profile-pic">
@@ -71,13 +99,13 @@ function getFeedHtml(){
 
                         </span>
                         <span class="tweet-detail">
-                            <i class="fa-solid fa-heart"
+                            <i class="fa-solid fa-heart ${likeIconClass}"
                             data-like="${tweet.uuid}"
                             ></i>
                             ${tweet.likes}
                         </span>
                         <span class="tweet-detail">
-                            <i class="fa-solid fa-retweet"
+                            <i class="fa-solid fa-retweet ${retweetIconClass}"
                             data-retweet="${tweet.uuid}"
                             "></i>
                             ${tweet.retweets}
@@ -85,11 +113,13 @@ function getFeedHtml(){
                     </div>   
                 </div>            
             </div>
+            <div id="replies-${tweet.uuid}">
+        ${repliesHtml}
+    </div> 
         </div>`
     })
     return feedHtml
-}
-
+}    
 
 function render(){
     const feed = document.getElementById('feed')
