@@ -30,3 +30,42 @@ console.log(guestsArr.join(''))
 // forEach does not return a new array.
 // map() returns a new array.
 
+//textContent passes text only
+
+
+//Hoisting - function declrations are moved to the top of their scope before execution.
+
+//Function expressions are not hoisted.
+
+console.log(getSpendAlert(150))
+
+const getSpendAlert = function(amount){
+    return `Warning! You just spent £${amount}!`
+}
+
+/*
+Challenge:
+    1. Convert this function declaration to a function expression.
+*/
+
+// function getTheftAlert(numberOfTransactionsHour) {
+//     if (numberOfTransactionsHour > 5) {
+//         return `You have made ${numberOfTransactionsHour} transactions 
+//                 in the past hour. We think your card might have been 
+//                 compromised`
+//     }
+// }
+
+// console.log(getTheftAlert(6))
+
+
+const getTheftAlert = function(numberOfTransactionsHour){
+        if (numberOfTransactionsHour > 5) {
+        return `You have made ${numberOfTransactionsHour} transactions 
+                in the past hour. We think your card might have been 
+                compromised`
+    }
+}
+
+console.log(getTheftAlert(6))
+
