@@ -69,3 +69,58 @@ const getTheftAlert = function(numberOfTransactionsHour){
 
 console.log(getTheftAlert(6))
 
+
+//Arrow function,
+
+let speedWarning = speed => `Yow are going at ${speed}`
+
+console.log(speedWarning(100))
+
+
+// arrow function with return
+
+const speedingWarning = (speedlimit, speed) => {
+    if(speed > speedlimit) {
+        return `You are going fast ${speed}`
+    }
+ }
+
+ console.log(speedingWarning(60, 40))
+
+ //arrow functions 
+
+
+ const distanceTraveledMiles = [267, 345, 234, 190, 299]
+
+const distanceTraveledKm = distanceTraveledMiles.map( distance => Math.round(distance * 1.6 ))
+
+console.log(distanceTraveledKm)
+
+
+const grades = [75, 83, 66, 43, 55, 99, 87, 16, 89, 64, 70, 80, 94, 77, 66, 73]
+
+/*
+Challenge:
+Convert this anonymous function to an arrow function. 
+Be as concise as you can.
+*/
+
+
+const totalGrades = grades.reduce((total, currentGrade) => total + currentGrade)
+
+
+console.log(`The class average is ${totalGrades/grades.length}`)
+
+
+//reduce function using 0 overide for objects when adding numbers from an object.
+
+import { studentsArr } from '/studentsArr'
+
+function calculateClassAverage(studentsArr) {
+    const totalGrades = studentsArr.reduce(function(total, currentStudent){
+        return total + currentStudent.grade
+    }, 0)
+    return totalGrades / studentsArr.length
+}
+
+console.log(calculateClassAverage(studentsArr))
